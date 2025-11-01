@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Voice, Our Rights</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Voice, Our Rights</h1>
+    <p>A citizen feedback platform for better governance</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>About the Project</h2>
+      <p>
+        “Our Voice, Our Rights” is a simple web platform that empowers citizens to raise their voices on local issues, 
+        share feedback on government schemes, and suggest improvements directly to concerned departments. 
+        It promotes digital transparency and participatory governance.
+      </p>
+    </section>
+
+    <section class="form-section">
+      <h2>Submit Your Feedback</h2>
+      <form id="feedbackForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="district">District</label>
+        <input type="text" id="district" placeholder="Enter your district" required />
+
+        <label for="feedback">Your Feedback / Suggestion</label>
+        <textarea id="feedback" rows="4" placeholder="Describe your concern or idea" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <p id="responseMsg"></p>
+    </section>
+
+    <section class="recent-feedback">
+      <h2>Recent Feedback</h2>
+      <ul id="feedbackList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Our Voice, Our Rights | Empowering Every Citizen</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
